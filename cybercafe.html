@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybercafe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body{
+            background-color: #fde8b7;
+
+        }
+        .navbar {
+            background-color: #633974; /* Purple background color */
+            border-bottom: #333 solid 3px;
+            border-top: #333 solid 3px;
+        }
+        .navbar .navbar-brand,
+        .navbar .navbar-nav .nav-link {
+            color: #333; /* Text color */
+            transition: 1s;
+            padding: 5px 5px;
+        }
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-nav .nav-link:hover {
+            color: #aa7a50; /* Text color on hover */
+            border-bottom-color: 100px solid #aa7a50;
+            transition: 0.5;
+            transform: scale(1.05);
+            z-index: 2;
+            border-bottom: #333 solid 1px;   
+            padding: 5px 5px;
+        }
+        .tm-container-content {
+            padding: 60px;
+            background-color: #aa7a50;
+            color: whitesmoke;
+            border-top: #4F4033 solid 5px;
+            border-bottom: #4F4033 solid 5px;
+        }
+        .tm-mt-60 {
+            margin-top: 60px;
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+            position: relative;
+            color: #333;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition:1s;
+        }
+        .portfolio-item img:hover {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transform:scale(1.1);
+        }
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0; /* Remove any existing margin */
+            padding-top: 20px;
+        }
+        .about-container img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            background-color: #4F4033;
+            border: #aa7a50 solid 3px;
+        }
+        .about-container h2 {
+            margin-top: 20px;
+            font-size: 2em;
+            background-color: #4F4033;
+            padding: 10px 10px;
+            border-radius: 30%;
+            color:whitesmoke;
+        }
+        .about-container p {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .about-container .social-icons {
+            margin-top: 20px;
+        }
+        .about-container .social-icons a {
+            margin: 0 10px;
+            color: #4F4033;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .about-container .social-icons a:hover {
+            color: #aa7a50;
+        }
+        footer {
+            background-color: #4F4033;
+        }
+        footer a {
+          color: #4F4033;
+          transition: 0.5s;
+        }
+        footer a:hover {
+          color: #aa7a50;
+          font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CYBERCAFE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workout.html">MyPerformance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cybercafe.html">Cybercafe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ancienttrails.html">AncientTrail</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <div class="container-fluid about-container tm-mt-60">
+        <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\CYBERCAFE-removebg-preview (size2).png" alt="Your Image">
+        <h2>ABOUT</h2>
+        <p>For our IT121 Comprog final exam we were task to do a crud management system with a group of 3 max members and we decided to do Cybercafes, also known as Internet Cafe, are establishments that provide public access to the internet, as well as other computer-related services. They are a popular form of internet access in areas where home internet connections are not widely available or affordable. It provides customers with access to computers, and sometimes even food and beverages. We provide a convenient and affordable way for people to access the internet, print documents, and even play online games.</p>
+    
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100012022301591" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Cybercafe Management System CRUD</h1>
+                <p class="lead">An IT121 subject 2nd Sem</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Portfolio Item 1 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\signup.png" class="card-img-top" alt="SignUp Image" data-toggle="modal" data-target="#modal1">
+                    <div class="card-body">
+                        <h5 class="card-title">1. SignUp</h5>
+                        <p class="card-text">This is a frame where you register to gain access of a unit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 1 -->
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">SignUp</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\signup.png" class="img-fluid" alt="SignUp Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\login.png" class="card-img-top" alt="SignIn Image" data-toggle="modal" data-target="#modal2">
+                    <div class="card-body">
+                        <h5 class="card-title">2. SignIn</h5>
+                        <p class="card-text">A frame where you can login after you signup/register.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 2 -->
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal2Label">SignIn</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\login.png" class="img-fluid" alt="SignIn Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\home.png" class="card-img-top" alt="Home Image" data-toggle="modal" data-target="#modal3">
+                    <div class="card-body">
+                        <h5 class="card-title">3. Home</h5>
+                        <p class="card-text">This is the homescreen, after login where you can choose beverages, contacts, and about us.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 3 -->
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal3Label">Home</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\home.png" class="img-fluid" alt="Home Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 4 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\beverages.png" class="card-img-top" alt="Beverages Image" data-toggle="modal" data-target="#modal4">
+                    <div class="card-body">
+                        <h5 class="card-title">4. Beverages</h5>
+                        <p class="card-text">This is a frame where you can order drinks and it also show your receipt of how much you spent.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 4 -->
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal4Label">Beverages</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\beverages.png" class="img-fluid" alt="Beverages Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 5 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\contact.png" class="card-img-top" alt="Contact Image" data-toggle="modal" data-target="#modal5">
+                    <div class="card-body">
+                        <h5 class="card-title">5. Contact</h5>
+                        <p class="card-text">This is where you'll be able to contact us or send us a feedback about our store.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 5 -->
+            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal5Label">Contact</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\contact.png" class="img-fluid" alt="Contact Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 6 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\about.png" class="card-img-top" alt="About Image" data-toggle="modal" data-target="#modal6">
+                    <div class="card-body">
+                        <h5 class="card-title">6. About</h5>
+                        <p class="card-text">This frame contains the information about our cybercafe store.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 6 -->
+            <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal6Label">About</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\about.png" class="img-fluid" alt="About Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 7 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\admincontrol.png" class="card-img-top" alt="Admin Control Image" data-toggle="modal" data-target="#modal7">
+                    <div class="card-body">
+                        <h5 class="card-title">7. Admin Control</h5>
+                        <p class="card-text">A frame where you have to input your user and pass first before gaining access to the admin.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 7 -->
+            <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal7Label">Admin Control</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\admincontrol.png" class="img-fluid" alt="Admin Control Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 8 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\admincustomerinfo.png" class="card-img-top" alt="Customer Info Image" data-toggle="modal" data-target="#modal8">
+                    <div class="card-body">
+                        <h5 class="card-title">8. Customer Info</h5>
+                        <p class="card-text">This is one of the admin functions where you can edit the customers informations and keep tabs.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 8 -->
+            <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal8Label">Customer Info</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\admincustomerinfo.png" class="img-fluid" alt="Customer Info Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 9 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\adminclientinfo.png" class="card-img-top" alt="Client Unit Info Image" data-toggle="modal" data-target="#modal9">
+                    <div class="card-body">
+                        <h5 class="card-title">9. Client Unit Info</h5>
+                        <p class="card-text">This is where you can update/edit the user units their time, payment, type, check in/out and etc.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 9 -->
+            <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal9Label">Client Unit Info</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\adminclientinfo.png" class="img-fluid" alt="Client Unit Info Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p><strong>Email: <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act">abapo.khirt@dnsc.edu.ph</strong></a></p>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

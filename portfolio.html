@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+   body{
+            background-color: #fde8b7;
+
+        }
+.navbar {
+    background-color: #633974; /* Purple background color */
+    border-bottom:#333 solid 3px;
+    border-top:#333 solid 3px;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    color: #333; /* Text color */
+    transition:1s;
+    padding: 5px 5px;
+
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-nav .nav-link:hover {
+    color: #aa7a50; /* Text color on hover */
+    border-bottom-color:100px  solid #aa7a50;
+    transition: 0.5;
+    transform:scale(1.05);
+    z-index:2;
+    border-bottom:#333 solid 1px;   
+    padding: 5px 5px;
+}
+
+        .tm-container-content {
+            padding: 60px;
+            background-color: #4F4033;
+            color:whitesmoke;
+            border: #aa7a50 solid 3px;
+        }
+        .tm-mt-60 {
+            margin-top: 60px;
+          
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+            position: relative;
+            color:#333;
+            margin: auto;
+            
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+        .portfolio-item .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .portfolio-item .btn {
+            background-color: #4F4033;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 100px;
+            opacity: 0.9;
+        }
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0; /* Remove any existing margin */
+            padding-top:20px;
+            
+        }
+        .about-container img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            border: #aa7a50 solid 3px;
+        }
+        .about-container h2 {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+        .about-container p {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .about-container .social-icons {
+            margin-top: 20px;
+        }
+        .about-container .social-icons a {
+            margin: 0 10px;
+            color: #4F4033;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .about-container .social-icons a:hover {
+            color: #aa7a50;
+        }
+        footer {
+            background-color: #4F4033;
+        }
+        footer a {
+          color: #4F4033;
+          transition: 0.5s;
+        }
+        footer a:hover {
+          color: #aa7a50;
+          font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MY PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workout.html">MyPerformance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cybercafe.html">Cybercafe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ancienttrails.html">AncientTrail</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <div class="container-fluid about-container tm-mt-60">
+        <img src="https://scontent.fdvo3-1.fna.fbcdn.net/v/t39.30808-6/376674650_1642854299458631_2945428033246600572_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH2Q4MIEL220Jn7ngRvpU8-Z8l2PINuCudnyXY8g24K5zK42wYEp0kytxF0iGm3yJQVfs77ck0UFdeT9BZO10jT&_nc_ohc=2HVoe-0ZIJ0Q7kNvgHKJ05o&_nc_ht=scontent.fdvo3-1.fna&oh=00_AYAPOQd-6376aeycTXY1S9-JD0a1dhYDq4sZI0rTaTJXsA&oe=666C66B8" alt="Your Image">
+        <h2>ABOUT ME</h2>
+        <p>Allow me to introduce myself. My name is KHIRT ABAPO, and I am 19 years old. I reside in New Visayas, Panabo City. Currently, I am attending Davao del Norte State College, pursuing BSIT. I have a passion for Game Developing, and I'm always eager to engage in new experiences and learn from different perspectives.</p>
+        <p><strong>Name:</strong> Khirt A. Abapo</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>Location:</strong> Panabo City</p>
+        <p><strong>School:</strong> Davao del Norte State College</p>
+        <p><strong>Address:</strong> New Visayas</p> 
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100012022301591" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Welcome to My Portfolio</h1>
+                <p class="lead">A showcase of my works</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Portfolio Item 1 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\workout img\406688670_319428047681054_4810905635765211767_n.jpg" class="card-img-top" alt="Project Image">
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="workout.html" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate Workout and Nutritionist for Exercise Enthusiasts.</h5>
+                        <p class="card-text">This offers a robust and intuitive platform for users to effectively workout routine plan, advisable nutrition and gives accurate workout.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\CYBERCAFE-removebg-preview (size2).png" class="card-img-top" alt="Project Image">
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="cybercafe.html" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cybercafe Management System CRUD</h5>
+                        <p class="card-text">Cybercafes, also known as Internet Cafe, are establishments that provide public access to the internet, as well as other computer-related services.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="https://cdn-icons-png.freepik.com/512/8194/8194865.png" class="card-img-top" alt="Project Image">
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="ancienttrails.html" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ancient Trails</h5>
+                        <p class="card-text">Ancient Trails is where you'll learn about ancient history with a bunch of articles from egypt, learn their artifacts, fossils, and more. You'll find detailed insights here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p><strong>Email: <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act">abapo.khirt@dnsc.edu.ph</strong></a></p>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

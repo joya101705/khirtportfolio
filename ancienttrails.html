@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Trails</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+         body{
+            background-color: #fde8b7;
+
+        }
+        .navbar {
+            background-color: #633974; /* Purple background color */
+            border-bottom: #333 solid 3px;
+            border-top: #333 solid 3px;
+        }
+        .navbar .navbar-brand,
+        .navbar .navbar-nav .nav-link {
+            color: #333; /* Text color */
+            transition: 1s;
+            padding: 5px 5px;
+        }
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-nav .nav-link:hover {
+            color: #aa7a50; /* Text color on hover */
+            border-bottom-color: 100px solid #aa7a50;
+            transition: 0.5;
+            transform: scale(1.05);
+            z-index: 2;
+            border-bottom: #333 solid 1px;   
+            padding: 5px 5px;
+        }
+        .tm-container-content {
+            padding: 60px;
+            background-color: #aa7a50;
+            color: whitesmoke;
+            border-top: #4F4033 solid 5px;
+            border-bottom: #4F4033 solid 5px;
+            
+        }
+        .tm-mt-60 {
+            margin-top: 60px;
+            
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+            position: relative;
+            color: #333;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition:1s;
+            border: #4F4033 solid 3px;
+        }
+        .portfolio-item img:hover {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transform:scale(1.1);
+            border: #4F4033 solid 3px;
+        }
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0; /* Remove any existing margin */
+            padding-top: 20px;
+            
+        }
+        .about-container img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            background-color: #4F4033;
+            border: #aa7a50 solid 3px;
+        }
+        .about-container h2 {
+            margin-top: 20px;
+            font-size: 2em;
+            background-color: #4F4033;
+            padding: 10px 10px;
+            border-radius: 30%;
+            color:whitesmoke;
+        }
+        .about-container p {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .about-container .social-icons {
+            margin-top: 20px;
+        }
+        .about-container .social-icons a {
+            margin: 0 10px;
+            color: #4F4033;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .about-container .social-icons a:hover {
+            color: #aa7a50;
+        }
+        footer {
+            background-color: #4F4033;
+        }
+        footer a {
+          color: #4F4033;
+          transition: 0.5s;
+        }
+        footer a:hover {
+          color: #aa7a50;
+          font-size: 18px;
+        }
+        .portfolio-item .card-body{
+            background-color: white;
+            border-radius: 5px;
+        }
+         .tm-mt-60 .btn-brown {
+    background-color: #8B4513; /* Brown color */
+    color: white; /* Text color */
+    border-color: #8B4513; /* Border color */
+    transition:1s;
+}
+
+.btn-brown:hover {
+    background-color: #A0522D; /* Darker brown on hover */
+    border-color: #A0522D; /* Darker border color on hover */
+    transform:scale(1.05);
+}      
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">ANCIENT TRAILS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workout.html">MyPerformance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cybercafe.html">Cybercafe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ancienttrails.html">AncientTrail</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <div class="container-fluid about-container tm-mt-60">
+        <img src="https://cdn-icons-png.freepik.com/512/8194/8194865.png" alt="Your Image">
+        <h2>ABOUT</h2>
+        <p>In this ITElec final exam we were to told to make a website with a theme that will catch the users attention and we were group into 3 max members. we decided we'll do an archaeology website with a bunch of articles about ancient history. Our Website is for exploring the wonders of ancient Egyptian civilization!
+            Dive deep into the mysteries of the Ancient Trails, uncover the secrets of the pharaohs, and embark on a virtual journey through the sands of time. Us hosts a vast collection of well-researched articles covering various aspects of ancient Egyptian history, culture, and daily life. Whether you're interested in the construction of the pyramids, the enigmatic hieroglyphs, or the rituals of mummification, you'll find detailed insights here.</p>
+    
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100012022301591" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+        </div>
+    </div>
+
+  <!-- Main Content -->
+<div class="container-fluid tm-container-content tm-mt-60">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>Ancient Artifacts Website </h1>
+            <p class="lead">An IT Elec1 subject 2nd sem</p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 portfolio-item">
+            <div id="carousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATh1.png" class="d-block w-100" alt="Additional Image 1">
+                    </div>
+                    <!-- Additional images for carousel -->
+                    <div class="carousel-item">
+                        <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATh2.png" class="d-block w-100" alt="Additional Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATh3.png" class="d-block w-100" alt="Additional Image 1">
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+                <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">1. Home</h5>
+                <p class="card-text">This is the homepage of the website with a bunch of articles where you'll learn the insights about the Egyptian History, culture, and daily life.</p>
+            </div>
+        </div>
+            <!-- Modal 1 -->
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">SignUp</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\signup.png" class="img-fluid" alt="SignUp Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="col-md-6 portfolio-item">
+                <div id="carousel2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATa1.png" class="card-img-top" alt="SignUp Image" data-toggle="modal" data-target="#modal1">
+                        </div>
+                        <!-- Additional images for carousel -->
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATa2.png" class="d-block w-100" alt="Additional Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATa3.png" class="d-block w-100" alt="Additional Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATa4.png" class="d-block w-100" alt="Additional Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATa5.png" class="d-block w-100" alt="Additional Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATa6.png" class="d-block w-100" alt="Additional Image 2">
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">2. Artifacts</h5>
+                    <p class="card-text">This is where you'll learn about the ancient artifacts, their history on how it began.
+                        Artifacts have provided essential clues about life in ancient Egypt.
+                    </p>
+                </div>
+            </div>
+            <!-- Modal 2 -->
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal2Label">SignIn</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\login.png" class="img-fluid" alt="SignIn Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="col-md-6 portfolio-item">
+                <div id="carousel3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="ATf1.png" class="card-img-top" alt="SignUp Image" data-toggle="modal" data-target="#modal1">
+                        </div>
+                        <!-- Additional images for carousel -->
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATf2.png" class="d-block w-100" alt="Additional Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATf3.png" class="d-block w-100" alt="Additional Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATf4.png" class="d-block w-100" alt="Additional Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATf5.png" class="d-block w-100" alt="Additional Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATf6.png" class="d-block w-100" alt="Additional Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATf1.png" class="d-block w-100" alt="Additional Image 2">
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">3. Fossils</h5>
+                    <p class="card-text">A page about fossils where you'll learn their variance like bones, shells, imprints, or other evidence of past life forms.</p>
+                </div>
+            </div>
+            <!-- Modal 3 -->
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal3Label">Home</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\home.png" class="img-fluid" alt="Home Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 4 -->
+            <div class="col-md-6 portfolio-item">
+                <div id="carousel4" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATfq1.png" class="card-img-top" alt="SignUp Image" data-toggle="modal" data-target="#modal1">
+                        </div>
+                        <!-- Additional images for carousel -->
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATfq2.png" class="d-block w-100" alt="Additional Image 1">
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">4. FAQ</h5>
+                    <p class="card-text">A simple page that is a about most people asked frequently answered questions.</p>
+                </div>
+            </div>
+            <!-- Modal 4 -->
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal4Label">Beverages</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\beverages.png" class="img-fluid" alt="Beverages Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- Added justify-content-center to center items -->
+            <!-- Portfolio Item 5 -->
+            <div class="col-md-6 portfolio-item">
+                <div id="carousel5" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATc1.png" class="card-img-top" alt="SignUp Image" data-toggle="modal" data-target="#modal1">
+                        </div>
+                        <!-- Additional images for carousel -->
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATc2.png" class="d-block w-100" alt="Additional Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="C:\Users\ACER\Downloads\myportfolio (html)-20240614T071014Z-001\myportfolio (html)\ATc3.png" class="d-block w-100" alt="Additional Image 2">
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel5" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel5" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">5. Contacts</h5>
+                    <p class="card-text">Lastly the contacts this is where you'll be able to send us a feedback.</p>
+                </div>
+            </div>
+            <!-- Modal 5 -->
+            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal5Label">Contact</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="C:\Users\Administrator\Documents\Html\Myportfolio\img\contact.png" class="img-fluid" alt="Contact Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid about-container tm-mt-60">
+                
+                <button class="btn btn-lg btn-brown mt-4" onclick="location.href='file:///C:/Users/Administrator/Documents/Html/FINAL%20FINAL%20VER/home.html';">
+                    Visit Website
+                    
+                </button>
+                
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p><strong>Email: <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act">abapo.khirt@dnsc.edu.ph</strong></a></p>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
